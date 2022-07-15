@@ -47,12 +47,8 @@ Queue.prototype.enqueue = function(value){
   this.array.push(value);
 }
 Queue.prototype.dequeue = function(){
-if(this.size() == 0){
-  return undefined;
-} else {
   return this.array.shift();
-}
-}
+} 
 Queue.prototype.size = function(){
   return this.array.length;
 }
